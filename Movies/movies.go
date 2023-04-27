@@ -11,7 +11,7 @@ import (
 type Movie struct {
 	Title    string
 	Minutes  int
-  Year int
+        Year int
 }
 
 type Rating struct {
@@ -111,7 +111,7 @@ func main() {
     raterID := record[0] 
     uniqueRaters[raterID] = true
 }
-fmt.Printf("\nUnique Raters: %d\n", len(uniqueRaters))
+  fmt.Printf("\nUnique Raters: %d\n", len(uniqueRaters))
   file1, err := os.Open("ratings.csv")
 	if err != nil {
 		fmt.Println("Error:", err)
